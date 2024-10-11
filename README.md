@@ -10,15 +10,11 @@ Just thought it could be great if I could check the different languages used in 
 
 - Recursively analyzes a specified directory.
 - Ignores the `.git` directory and its contents.
-- Displays the count and percentage of files per programming language.
+- Displays the percentage of files per programming language.
 
 ## Requirements
 
 - Python3
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Setting up the Project
 
@@ -40,15 +36,20 @@ pip install -r requirements.txt
 
 1. Install dependencies
 
-### dependencies
-- `pygments`
-- `colorama`
-- `pyfiglet`
+   ### dependencies
+   - `pygments`
+   - `colorama`
+   - `pyfiglet`
 
-You can install them by running this command
-```bash
-pip install -r requirements.txt
-```
+   You can install them by running this command
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run using this command specifying the directory to be analyzed.
+   Replace python with the appropriate command for your python version.
+   ```bash
+   python kodex.py path/to/directory
+   ```
 
 ## Contributing
 If you have any issues running it or will like to contribute/suggest anything, let's meet in the PR or issues section :]
