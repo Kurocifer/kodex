@@ -74,7 +74,7 @@ def print_language_bars(percentages):
 def main():
     print_title()
     if len(sys.argv) != 2:
-        print(Fore.RED + "Usage: python kodex.py <directory_path>")
+        print("Usage: python kodex.py <directory_path>")
         return
 
     directory_path = sys.argv[1]
