@@ -40,6 +40,10 @@ def get_language_statistics(directory):
     total_files = 0
 
     for root, _, files in os.walk(directory):
+        # skip the .git dir if it's a git repo
+        if '.git' in root.split(os.sep):
+            continue
+
         for file in files:
             file_path = os.path.join(root, file)
             lang = detect_language(file_path)
@@ -70,7 +74,7 @@ def print_language_bars(percentages):
 def main():
     print_title()
     if len(sys.argv) != 2:
-        print(Fore.RED + "Usage: python language_percentage.py <direcory_path>")
+        print(Fore.RED + "Usage: python kodex.py <directory_path>")
         return
 
     directory_path = sys.argv[1]
