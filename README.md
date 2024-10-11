@@ -48,8 +48,20 @@ Just thought it could be great if I could check the different languages used in 
 2. Run using this command specifying the directory to be analyzed.
    Replace python with the appropriate command for your python version.
    ```bash
-   python kodex.py path/to/directory
+   python3 kodex.py path/to/directory
    ```
+   If you want to run it from anywhere, in your terminal
+   - Make the script executable using this command
+   ```bash
+      chmod +x kodex.py
+    ```
+   - Add this line to the beginning of the script
+      `#!/usr/bin/env python3`
+     - Add the script to your env path.
+   [Linux]
+      ```bash
+      sudo cp kodex.py /user/local/bin
+      ```
 
 ## Contributing
 If you have any issues running it or will like to contribute/suggest anything, let's meet in the PR or issues section :]
